@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="content/img/favicon2.png">
     <link rel="apple-touch-icon" href="content/img/apple-touch-icon.png">
-    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -64,7 +64,11 @@
                     </div>
                 </div>
                 <div class="hero-img-box">
-                    <img src="content/img/hero.png" class="hero-img" alt="woman enjoing food">
+                    <picture>
+                    <source srcset="content/img/hero-3.webp" type="image/webp" />
+                    <source srcset="content/img/hero-min.png" type="image/png" />
+                    <img src="content/img/hero-3.webp" class="hero-img" alt="woman enjoing food">
+                </picture>
                 </div>
             </div>
         </section>
@@ -502,6 +506,6 @@
 
         </div>
     </footer>
-   <script src="/07-Omnifood-Desktop/js/script.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>
